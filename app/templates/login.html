@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"/>
+    <title>Login</title>
+</head>
+<body>
+    <form class="container">
+        <h2 class="is-size-2">Login Form</h2>
+        <div class="field">
+            <label class="label">Username</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input">
+            </div>
+          </div>
+        <button class="button is-primary">Login</button>
+    </form>
+</body>
+<script>
+    fetch('http://127.0.0.1:5000/helloworld').then( res => console.log(res.json()))
+</script>
+</html>
